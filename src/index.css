@@ -1,0 +1,125 @@
+/** 
+ * FileName - index.css (CSS stylesheet)
+ * FileType - .jsx (React Js file)
+ * Lines - 125
+ * Created On - 15/8/2023, 01:19:20
+ * Author - Joy Brar
+ * See - https://github.com/JoyBrar2001/MUJ-ACM-Student-Chapter_Website
+ * Description - This exports all the tailwind styles, and the CSS classes used in the website
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.white__gradient{
+  background: rgba(228, 226, 226, 0.978);
+  filter: blur(150px);
+}
+
+.blue-text__glow{
+  text-shadow: 0px 0px 25px rgb(82, 208, 224);
+}
+
+.blue__glow{
+  box-shadow: 0px 0px 39px rgba(205, 228, 232, 0.988);
+}
+
+.img-blue__glow{
+  filter: drop-shadow(0px 0px 100px rgba(83, 189, 255, 0.87));
+}
+
+.blue__gradient{
+  background: rgba(1, 99, 160, 0.87);
+  filter: blur(376.5px);
+}
+
+.about__gradient{
+  background: linear-gradient(105.56deg, #131341 0%, #0067A5 100%);
+  box-shadow: 0px 4px 100px rgba(0, 85, 137, 0.4);
+  z-index: -1;
+}
+
+.about__element__gradient{
+  background: linear-gradient(90deg, #19C1D7 0%, #005662 100%);
+}
+
+.team__title__gradient{
+  background: radial-gradient(73.37% 73.37% at 50.1% 13.04%, #5BC1FF 0%, #0084D3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.team__card__bg{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  filter: drop-shadow(0px 0px 179px rgba(1, 102, 163, 0.1));
+}
+.team__card__content{
+  background: linear-gradient(290.29deg, #131644 4.13%, #0166A3 86.88%);
+}
+
+.teamhead__card__bg{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+  filter: drop-shadow(0px 0px 179px rgba(1, 102, 163, 0.1));
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0eb2ce;
+}
+
+.loaderAnimation{
+  animation: glow 2s ease-in-out infinite forwards;
+}
+
+@keyframes glow {
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+loaderAnimation{}
+
+@layer components{
+  .navbar-li{
+    @apply text-gray-300 cursor-pointer hover:text-white transition-all duration-150;
+  }
+
+  .titleStyles{
+    @apply text-center text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold uppercase;
+  }
+}
