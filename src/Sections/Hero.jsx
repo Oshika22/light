@@ -9,7 +9,7 @@
 */
 
 import React from 'react';
-import ACM_3D from '../assets/Logos/ACM-3D-Model.png';
+import ACM_2D from '../assets/Logos/acm-logo-2d-model.png.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../constants/motion';
 // import ACMLogo3D from '../components/ACMLogo3D';
