@@ -27,7 +27,7 @@ const Hero = () => {
           whileInView="show"
           className='flex flex-col justify-start items-center mr-6 md:mr-8 lg:mr-10'
         >
-          <div className='bg-[#272A57] w-[40px] md:w-[50px] h-[40px] md:h-[50px] rounded-full blue__glow' />
+          <div className='bg-[#10BED5] w-[40px] md:w-[50px] h-[40px] md:h-[50px] rounded-full blue__glow' />
           <div className='bg-gradient-to-b from-[#10BED5] w-[7px] md:w-[9px] h-[600px] sm:h-[500px] mt-[-2px]' />
         </motion.div>
 
@@ -61,7 +61,7 @@ const Hero = () => {
               variants={fadeIn('left', 50, 1, 0.5)}
               initial="hidden"
               whileInView="show"
-              className='text-[#000000] text-sm md:text-base mt-4 max-w-2xl mx-auto'
+              className='text-[#1d1f3f] text-sm md:text-base mt-4 max-w-2xl mx-auto'
             >
               We the ACM Student Chapter are a dynamic community of tech enthusiasts driven by a shared passion to explore the multifaceted world of computing. Here, we believe that teamwork is not just a concept, it's the essence that propels us towards greatness. With a focus on nurturing talent and promoting learning, the ACM S chapter provides a platform for students to dive into technical challenges, engage in collaborative projects, and interact with industry professionals. Through a spectrum of workshops, hackathons and networking events, the ACM S chapter empowers students to refine their skills.
             </motion.p>
