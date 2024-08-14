@@ -9,7 +9,7 @@
 */
 
 import React from 'react';
-import ACM_3D from '../assets/Logos/ACM-3D-Model.png';
+import ACM_2D from '../assets/Logos/ACM-2D-model1.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../constants/motion';
 // import ACMLogo3D from '../components/ACMLogo3D';
@@ -41,7 +41,7 @@ const Hero = () => {
             className='mb-8'
           >
             <img
-              src={ACM_3D}
+              src={ACM_2D}
               className='w-[300px] md:w-[400px] img-blue__glow'
               alt="ACM Logo"
             />
