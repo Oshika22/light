@@ -10,7 +10,7 @@
 
 import React, { useState, useEffect } from 'react';
 // import DOMPurify from 'dompurify';
-import ACM_2D from '../assets/Logos/ACM-2D-model1.png';
+import ACM_2D from '../assets/Logos/ACM-2D-model.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../constants/motion';
 
@@ -196,6 +196,16 @@ const Hero = () => {
         ease: "back.out(1)",
       });
     }
+    gsap.to(".float-logo", {
+      y: 20,
+      scale: 1.05,
+      duration: 1.5,
+      repeat: -1,
+      yoyo: "true",
+    });
+    gsap.to(".float-logo", {
+      rotate: 45,
+    });
   }, [TLclutter,TRclutter,Lclutter,Rclutter,BLclutter,BRclutter]);
   return (
     <div id='Home' className='w-full h-full max-w-[1440px] mx-auto p-4 pt-10 relative mt-24'>
@@ -222,20 +232,23 @@ const Hero = () => {
           whileInView="show"
           className='mb-8'
           >
-            <img
-            src={ACM_2D}
-            className='w-[300px] md:w-[400px] img-blue__glow'
-            alt="ACM Logo"
-            />
-            <div className="flex squares">
-              <div id="top-left">{TLclutter}</div>       
-              <div id="top-right">{TRclutter}</div>
-              <div id="left">{Lclutter}</div>
-              <div id="right">{Rclutter}</div>
-              <div id="bottom-left">{BLclutter}</div>
-              <div id="bottom-right">{BRclutter}</div>
-              <div id="bottom"></div>
+            <div className='logo-box'> 
+              <img
+              src={ACM_2D}
+              className='w-[200px] md:w-[250px] img-blue__glow float-logo'
+              alt="ACM Logo"
+              />
+              <div className="flex squares">
+                <div id="top-left">{TLclutter}</div>       
+                <div id="top-right">{TRclutter}</div>
+                <div id="left">{Lclutter}</div>
+                <div id="right">{Rclutter}</div>
+                <div id="bottom-left">{BLclutter}</div>
+                <div id="bottom-right">{BRclutter}</div>
+                <div id="bottom"></div>
+              </div>
             </div>
+            
           
           </motion.div>
 

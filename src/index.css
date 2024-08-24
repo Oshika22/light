@@ -126,8 +126,8 @@ loaderAnimation{}
 
 /* logo Animation style */
 .squares{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: absolute;
   top: 50px;
 
@@ -136,6 +136,8 @@ loaderAnimation{}
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
+  /* background-color: #131644; */
+
 
 }
 
@@ -239,4 +241,16 @@ loaderAnimation{}
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   scale: 0;
+}
+.float-logo{
+  z-index: 10;
+  box-shadow: 0 0 10px 0 #0084D3;
+  rotate: 60deg;
+  margin: 50px;
+}
+.logo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
